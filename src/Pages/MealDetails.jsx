@@ -18,26 +18,30 @@ export const MealDetails = () => {
       <div className="flex">
         <div className="w-96 h-96">
           <img src={meal.strMealThumb} alt={meal.strMeal} className="w-full rounded mb-4 " /></div>
-      
-    <div className="ms-20">
-        <h2 className="text-2xl font-bold mb-4">{meal.strMeal}</h2>
-        <hr className="text-pink-600" />
-        <p><strong>Category:</strong> {meal.strCategory}</p>
-        <p><strong> Tags:</strong> {meal.strTags}</p>
-        <p><strong>Source:</strong>"{meal.strSource}"</p>
-        <div className="border bg-orange-500 w-30">
-          <h5>Ingrediants</h5>
-          <p><strong>1:</strong>"{meal.strIngredient1}"</p>
-          <p><strong>2:</strong>"{meal.strIngredient2}"</p>
-          <p><strong>3:</strong>"{meal.strIngredient3}"</p>
-          <p><strong>4:</strong>"{meal.strIngredient4}"</p>
-          <p><strong>5:</strong>"{meal.strIngredient5}"</p>
-          <p><strong>6:</strong>"{meal.strIngredient6}"</p>
-          <p><strong>7:</strong>"{meal.strIngredient7}"</p>
-          <p><strong>8:</strong>"{meal.strIngredient8}"</p>
-          <p><strong>9:</strong>"{meal.strIngredient9}"</p>
-          <p><strong>10:</strong>"{meal.strIngredien10}"</p>
-        </div>
+
+        <div className="ms-20">
+          <h2 className="text-2xl font-bold mb-4">{meal.strMeal}</h2>
+          <hr className="text-pink-600" />
+          <p><strong>Category:</strong> {meal.strCategory}</p>
+          <p><strong> Tags:</strong> {meal.strTags}</p>
+          <p><strong>Source:</strong>"{meal.strSource}"</p>
+          <div className="border bg-orange-500 p-4">
+            <h5 className="text-lg font-bold mb-2">Ingredients</h5>
+            <div className="grid grid-cols-3 gap-2">
+              <p className="text-white ms-1"><span className="w-4 h-4 justify-center border border-white rounded-full text-white bg-cyan-400">
+  1</span> {meal.strIngredient1}</p>
+              <p  className="text-white ms-1"><strong>2:</strong> {meal.strIngredient2}</p>
+              <p  className="text-white ms-1"><strong>3:</strong> {meal.strIngredient3}</p>
+              <p  className="text-white ms-1"><strong>4:</strong> {meal.strIngredient4}</p>
+              <p  className="text-white ms-1"><strong>5:</strong> {meal.strIngredient5}</p>
+              <p  className="text-white ms-1"><strong>6:</strong> {meal.strIngredient6}</p>
+              <p  className="text-white ms-1"><strong>7:</strong> {meal.strIngredient7}</p>
+              <p  className="text-white ms-1"><strong>8:</strong> {meal.strIngredient8}</p>
+              <p  className="text-white ms-1"><strong>9:</strong> {meal.strIngredient9}</p>
+              <p   className="text-white ms-1"><strong>10:</strong> {meal.strIngredient10}</p>
+            </div>
+          </div>
+
         </div>
       </div>
       <div>
