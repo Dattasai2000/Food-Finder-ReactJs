@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { MealCard } from "../Components/MealCard";
+import { SearchBar } from "../Components/searchbar";
 
 
 export const CategoryPage = () => {
@@ -23,14 +24,20 @@ export const CategoryPage = () => {
   }, [name]);
 
   return (
-    <div className="p-4">
+    <div >
       {category && (
         <>
-          <h1 className="text-2xl font-bold mb-2">{category.strCategory}</h1>
+        <SearchBar/>
+      
+        <div className="border-2 border-pink-800 mb-8 mt-5 ms-36 me-20 p-4">
+          <h1 className="text-2xl font-bold mb-2 ">{category.strCategory}</h1>
           <p className="mb-4">{category.strCategoryDescription}</p>
+          </div>
         </>
       )}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <h1 className="text-4xl ms-36 me-20 ">MEALS</h1>
+        <hr className="text-5xl text-orange-600 font-extrabold w-26 ms-36 " />
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4  mt-5 ms-36 me-20">
         {meals.map(meal => <MealCard key={meal.idMeal} meal={meal} />)}
       </div>
     </div>

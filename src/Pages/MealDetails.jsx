@@ -15,11 +15,41 @@ export const MealDetails = () => {
 
   return (
     <div className="p-4 max-w-3xl mx-auto">
+
+      <div>
+        <img src={meal.strMealThumb} alt={meal.strMeal} className="w-48 rounded mb-4 " /></div>
       <h2 className="text-2xl font-bold mb-4">{meal.strMeal}</h2>
-      <img src={meal.strMealThumb} alt={meal.strMeal} className="w-full rounded mb-4" />
+    
       <p><strong>Category:</strong> {meal.strCategory}</p>
       <p><strong>Area:</strong> {meal.strArea}</p>
-      <p className="mt-2"><strong>Instructions:</strong> {meal.strInstructions}</p>
+      <p><strong> Tags:</strong> {meal.strTags}</p>
+      <p><strong>Source:</strong>"{meal.strSource}"</p>
+      <div>
+        <h5>Ingrediants</h5>
+      <p><strong>1:</strong>"{meal.strIngredient1}"</p>
+      <p><strong>2:</strong>"{meal.strIngredient2}"</p>
+      <p><strong>3:</strong>"{meal.strIngredient3}"</p>
+      <p><strong>4:</strong>"{meal.strIngredient4}"</p>
+      <p><strong>5:</strong>"{meal.strIngredient5}"</p>
+      <p><strong>6:</strong>"{meal.strIngredient6}"</p>
+      <p><strong>7:</strong>"{meal.strIngredient7}"</p>
+      <p><strong>8:</strong>"{meal.strIngredient8}"</p>
+      <p><strong>9:</strong>"{meal.strIngredient9}"</p>
+      <p><strong>10:</strong>"{meal.strIngredien10}"</p>
+      </div>
+      <div>
+         <p><strong>Measurement1:</strong>"{meal.strMeasure1}"</p>
+           <p><strong>Measurement2:</strong>"{meal.strMeasure2}"</p>
+             <p><strong>Measurement3:</strong>"{meal.strMeasure3}"</p>
+               <p><strong>Measurement4:</strong>"{meal.strMeasure4}"</p>
+                 <p><strong>Measurement5:</strong>"{meal.strMeasure5}"</p>
+                   <p><strong>Measurement6:</strong>"{meal.strMeasure6}"</p>
+                     <p><strong>Measurement7:</strong>"{meal.strMeasure7}"</p>
+                       <p><strong>Measurement8:</strong>"{meal.strMeasure8}"</p>
+                         <p><strong>Measurement9:</strong>"{meal.strMeasure9}"</p>
+                           <p><strong>Measurement10:</strong>"{meal.strMeasure10}"</p>
+      </div>
+      <p><strong>Instructions:</strong>"{meal.strInstructions}"</p>
     </div>
   );
 };
