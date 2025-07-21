@@ -32,7 +32,7 @@ export const MealDetails = () => {
           onClick={() => navigate("/")}
         ></i> 
          <h2 className="text-2xl font-light mb-4 ms-7"><span><i className="fa-solid fa-chevron-right text-white "></i><i className="fa-solid fa-chevron-right text-white me-7"></i>
-</span>{meal.strMeal}</h2>
+</span>{meal.strMeal.toUpperCase()}</h2>
       </div>
     <h4 className="font-bold text-3xl ">MEAL DETAILS</h4>
     <hr className="w-14 text-5xl text-orange-500 mb-4" />
