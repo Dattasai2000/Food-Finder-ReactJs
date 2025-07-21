@@ -79,7 +79,7 @@ export const MealDetails = () => {
                   const ingredient = meal[`strIngredient${i + 1}`];
                   return ingredient && (
                     <p key={i} className="text-white flex items-center gap-2">
-                      <span className="w-5 h-5 flex items-center justify-center border border-white rounded-full bg-cyan-400 text-white text-xs">{i + 1}</span>
+                      <span className="w-5 h-5 flex items-center justify-center border border-white rounded-full bg-cyan-400 text-white text-xs"  style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.3)" }}>{i + 1}</span>
                       {ingredient}
                     </p>
                   );
@@ -91,7 +91,7 @@ export const MealDetails = () => {
 
         {/* Measures Section */}
         <h5 className="font-bold mt-6">Measure :</h5>
-        <div className="border-sky-200 grid grid-cols-2 sm:grid-cols-3 gap-2 p-4 bg-cyan-50"  style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.3)" }}>
+        <div className="border-sky-200 grid grid-cols-2 sm:grid-cols-3 gap-2 p-4 bg-cyan-50 shadow-md"  style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.3)" }}>
           {Array.from({ length: 10 }, (_, i) => {
             const measure = meal[`strMeasure${i + 1}`];
             return measure && (
