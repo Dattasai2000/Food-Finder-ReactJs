@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { SearchBar } from "../Components/searchbar";
+import { CategoryCard } from "../Components/CategoryCard";
 
 
 export const MealDetails = () => {
@@ -29,9 +30,11 @@ export const MealDetails = () => {
           title="Back to Home"
           onClick={() => navigate("/")}
         ></i> 
-         <h2 className="text-2xl font-light mb-4 ms-7"><span><i className="fa-solid fa-forward  font-medium text-white me-7"></i></span>{meal.strMeal}</h2>
+         <h2 className="text-2xl font-light mb-4 ms-7"><span><i className="fa-solid fa-chevron-right text-white "></i><i className="fa-solid fa-chevron-right text-white me-7"></i>
+</span>{meal.strMeal}</h2>
       </div>
-
+    <h4 className="font-bold text-3xl ">MEAL DETAILS</h4>
+    <hr className="w-14 text-5xl text-orange-500 mb-4" />
       {/* Meal Details Section */}
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="w-full lg:w-96 h-96">
@@ -46,9 +49,9 @@ export const MealDetails = () => {
           <h2 className="text-2xl font-bold mb-4">{meal.strMeal}</h2>
           <hr className="text-pink-600 mb-2" />
           <p><strong>Category:</strong> {meal.strCategory}</p>
-          <p><strong>Tags:</strong> {meal.strTags || "N/A"}</p>
+          <p><strong>Tags:</strong> {meal.strTags }</p>
           <p><strong>Source:</strong> {meal.strSource ? (
-            <a href={meal.strSource} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+            <a href={meal.strSource} target="_blank" rel="noopener noreferrer" >
               {meal.strSource}
             </a>
           ) : "N/A"}</p>
@@ -103,6 +106,7 @@ export const MealDetails = () => {
         </ul>
       </div>
     </div>
+   
     </>
   );
 };
