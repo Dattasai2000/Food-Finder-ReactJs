@@ -13,6 +13,7 @@ export default function () {
    <Header/>
    <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/category/:name" element={<CategoryPage />} />
         <Route path="/meal/:id" element={<MealDetails />} />
       </Routes>

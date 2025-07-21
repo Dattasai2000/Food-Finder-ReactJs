@@ -27,7 +27,7 @@ export const MealDetails = () => {
         <i
           className="fa-solid fa-house text-xl text-white cursor-pointer hover:text-blue-500 mt-2 ms-2"
           title="Back to Home"
-          onClick={() => navigate("/Home")}
+          onClick={() => navigate("/")}
         ></i> 
          <h2 className="text-2xl font-light mb-4 ms-7"><span><i className="fa-solid fa-forward  font-medium text-white me-7"></i></span>{meal.strMeal}</h2>
       </div>
