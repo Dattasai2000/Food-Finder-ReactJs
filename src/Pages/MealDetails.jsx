@@ -72,7 +72,7 @@ export const MealDetails = () => {
             ) : "N/A"}</p>
 
             {/* Ingredients Section */}
-            <div className="border bg-orange-500 p-4 mt-4 rounded">
+            <div className="border bg-orange-500 p-4 mt-4 rounded shadow-md">
               <h5 className="text-lg font-bold mb-2 text-white">Ingredients</h5>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {Array.from({ length: 10 }, (_, i) => {
