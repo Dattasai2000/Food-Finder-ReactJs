@@ -91,7 +91,7 @@ export const MealDetails = () => {
 
         {/* Measures Section */}
         <h5 className="font-bold mt-6">Measure :</h5>
-        <div className="border-sky-200 grid grid-cols-2 sm:grid-cols-3 gap-2 p-4 bg-cyan-50">
+        <div className="border-sky-200 grid grid-cols-2 sm:grid-cols-3 gap-2 p-4 bg-cyan-50"  style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.3)" }}>
           {Array.from({ length: 10 }, (_, i) => {
             const measure = meal[`strMeasure${i + 1}`];
             return measure && (
