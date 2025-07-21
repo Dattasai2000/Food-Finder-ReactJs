@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { SearchBar } from "../Components/searchbar";
-import { CategoryCard } from "../Components/CategoryCard";
+
+
 
 
 export const MealDetails = () => {
@@ -49,7 +50,7 @@ export const MealDetails = () => {
           <h2 className="text-2xl font-bold mb-4">{meal.strMeal}</h2>
           <hr className="text-pink-600 mb-2" />
           <p><strong>Category:</strong> {meal.strCategory}</p>
-          <p><strong>Tags:</strong> {meal.strTags }</p>
+          <p><strong>Tags:</strong> <span className="border bg-pink-700 rounded">{meal.strTags }</span></p>
           <p><strong>Source:</strong> {meal.strSource ? (
             <a href={meal.strSource} target="_blank" rel="noopener noreferrer" >
               {meal.strSource}
@@ -106,6 +107,7 @@ export const MealDetails = () => {
         </ul>
       </div>
     </div>
+    
    
     </>
   );
